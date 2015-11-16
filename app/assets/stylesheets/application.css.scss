@@ -1,0 +1,51 @@
+ @import 'bootstrap-sprockets';
+ @import "bootstrap";
+ @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
+
+body {
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+}
+
+a:link, a:visited {
+	color:#eee;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.wide {
+  width:100%;
+  height:350px;
+  background-image:image-url("bg.png");
+  background-size:cover;
+}
+
+
+
+.logo {
+  color:#fff;
+  font-weight:800;
+  font-size:14pt;
+  text-align:center;
+}
+
+.line {
+  padding-top:20px;
+  white-space:no-wrap;
+  overflow:hidden;
+  text-align:center;
+}
+
+.wod-container{
+	.wod{
+	font-size:60px;
+	}
+	p{
+	font-size:22px;
+	}
+}
