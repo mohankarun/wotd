@@ -19,22 +19,33 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li ><a href="about">About</a></li>
+        <li ><a href="/">Home</a></li>
+        <li class="active"><a href="/about">About</a></li>
       </ul>
      </div><!--/.nav-collapse -->
   </div>
 </div>
 
-<div class="wide">
+<div class="wide-green">
   	<div class="col-xs-5 line"><hr></div>
     <div class="col-xs-2 logo"><%= image_tag("wotd-logo.png" , height:100 , width:100) %></div>
     <div class="col-xs-5 line"><hr></div>
+  <div class="text-center about-head"><br><br><br><br><br> About the Application </div>
 </div>
 
 <div class="container">
-  <div class="text-center">
-   <%= yield %>
+  <div class="text-center about ">
+   <p>A Simple ruby on rails application to render a new random word and a meaning on a particular date. The words can be configured manually for a particular date. If not configured it uses dictionary.com's rss feed to fetch the word to display.
+   </p> 
+
+  <div class="git">
+  <%= image_tag('invertocat.png') %>
+<%=link_to "git-source", "https://github.com/mohankarun/wotd", :target => "_blank"   %>
+</div>
+<div class="feed">
+  <%= image_tag('feed.svg',height:'48px',width:'48px') %>
+<%=link_to "rss-source", "http://dictionary.reference.com/wordoftheday/wotd.rss", :target => "_blank"   %>
+</div>
   </div>
 </div>
 </body>

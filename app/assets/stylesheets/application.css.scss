@@ -25,7 +25,23 @@ body {
   background-size:cover;
 }
 
+.wide-green{
+  width:100%;
+  height:300px;
+  background-size:cover;
+  background:blueviolet;
+}
 
+.about-head{
+  color:#fff;
+  font-size:30px
+}
+
+.about{
+padding:50px 0;
+font-size:15px;  
+
+}
 
 .logo {
   color:#fff;
@@ -48,4 +64,27 @@ body {
 	p{
 	font-size:22px;
 	}
+}
+
+.git , .feed {
+text-align: left;
+border: 1px solid;
+width: 160px;
+font-size: 20px;
+border-radius: 10px;
+padding: 5px;
+margin:10px;
+float:left;
+  a{
+  color:#333;
+  }
+}
+.git:hover,
+.feed:hover{
+  background:black;
+  color:white;
+  a{
+  color:white;
+  text-decoration:none;
+  }
 }
