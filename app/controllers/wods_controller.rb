@@ -1,7 +1,7 @@
 class WodsController < ApplicationController
   require 'feedjira'
   before_action :set_wod, only: [:show, :edit, :update, :destroy]
-  WOTD_RSS_FEED='http://dictionary.reference.com/wordoftheday/wotd.rss'
+  @WOTD_RSS_FEED='http://dictionary.reference.com/wordoftheday/wotd.rss'
 
   # GET /wods
   # GET /wods.json
@@ -33,6 +33,7 @@ class WodsController < ApplicationController
 
   def fetch_save_from_dictionary
    url = ENV['feed_url']
+   url = 'http://dictionary.reference.com/wordoftheday/wotd.rss'
   feed = Feedjira::Feed.fetch_and_parse url
   logger.debug "Feed type ... #{ENV['feed_type']}"
   if ENV['feed_type'] == 'dictionary'

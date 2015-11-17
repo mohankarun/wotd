@@ -4,10 +4,6 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
 
 development:
   <<: *default
@@ -29,3 +25,4 @@ production:
   port: < %=ENV['$OPENSHIFT_POSTGRESQL_DB_PORT']%>
   username: < %=ENV['OPENSHIFT_POSTGRESQL_DB_USERNAME']%>
   password: < %=ENV['OPENSHIFT_POSTGRESQL_DB_PASSWORD']%>
+
