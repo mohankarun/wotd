@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 
 
 Started GET "/" for 127.0.0.1 at 2015-11-16 20:43:18 +1100
@@ -5946,3 +5948,4 @@ Feedjira::FetchFailure (Fetch failed - 403):
   Rendered /Users/mohan/.rvm/gems/ruby-2.2.1@trackandtrace/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
   Rendered /Users/mohan/.rvm/gems/ruby-2.2.1@trackandtrace/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /Users/mohan/.rvm/gems/ruby-2.2.1@trackandtrace/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.8ms)
+>>>>>>> d566df92fe16c80ef930eefb305411df147fddc2

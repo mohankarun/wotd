@@ -32,11 +32,18 @@ class WodsController < ApplicationController
 
 
   def fetch_save_from_dictionary
+   url = ENV['feed_url']
    url = 'http://dictionary.reference.com/wordoftheday/wotd.rss'
   feed = Feedjira::Feed.fetch_and_parse url
-  logger.debug "Fetching from RSS Feed..."
-  word = feed.entries.first.title.split(':')[0]
-  meaning =  feed.entries.first.summary.split(':')[1]
+  logger.debug "Feed type ... #{ENV['feed_type']}"
+  if ENV['feed_type'] == 'dictionary'
+   word = feed.entries.first.title.split(':')[0]
+   meaning =  feed.entries.first.summary.split(':')[1]
+ else
+  word =  feed.entries.first.title
+  meaning = feed.entries.first.description 
+ end  
+ 
   wod = Feed.new do |u|
   u.title = word
   u.meaning = meaning

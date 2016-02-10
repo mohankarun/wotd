@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Simple ruby on rails application to render a new random word and a meaning on a particular date. The words can be configured manually for a particular date. If not configured it uses dictionary.com's rss feed to fetch the word to display. 
 
-Things you may want to cover:
+* Ruby version 2.1 
 
-* Ruby version
+* Gems [feedjira]
 
-* System dependencies
+* Configuration [bundle install]
 
-* Configuration
+* Database creation [rake db:migrate]
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* RSS Feed Configuration 
